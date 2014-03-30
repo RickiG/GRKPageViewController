@@ -91,6 +91,11 @@
 
 #pragma mark - Acessors
 
+- (void) updatePageLayout
+{
+    [self initPages];
+}
+
 - (void)setCurrentIndex:(NSUInteger)currentIndex
 {
     [self setCurrentIndex:currentIndex animated:NO];

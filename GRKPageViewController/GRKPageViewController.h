@@ -90,11 +90,11 @@
 - (void)setCurrentIndex:(NSUInteger)index animated:(BOOL)animated;
 
 /**
- If you change the count of viewControllers, call this method to recalculate the 
+ If you change the count of viewControllers after viewDidLoad, call this method to recalculate the 
  scrollView content size.
  e.g. PageViewController is added to the screen upon viewHiearchy setup, but your data
  is coming in asynchronously.
  */
-- (void)initPages;
+- (void) updatePageLayout;
 
 @end
